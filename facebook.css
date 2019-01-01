@@ -13,6 +13,14 @@ html{
 }
 a{
 	text-decoration: none;
+	color:#2196FB;
+	transition: all .2s ease-in-out;
+}
+a:hover{
+	color:#00c;
+}
+a:visited{
+	color: rgb(160,0,160);
 }
 /*Header content*/
 header{
@@ -210,11 +218,11 @@ header .search-area ul li{
 #content-area .widget-box .body{
 	padding:20px 0;
 }
-#content-area .main-area .submenu ul{
+#content-area .main-area .widget-box.submenu ul{
 	padding:0;
 	margin:0;
 }
-#content-area .main-area .submenu ul li{
+#content-area .main-area .widget-box.submenu ul li{
 	display: inline-block;
 	padding:10px;
 	width:20%;
@@ -226,7 +234,7 @@ header .search-area ul li{
 	font-weight: 300;
 
 }
-#content-area .main-area .widget-box  li:nth-child(5){
+#content-area .main-area .widget-box.submenu  li:nth-child(5){
 	padding:28px 0 21px;
 
 
@@ -237,10 +245,10 @@ header .search-area ul li{
 	color: #2196F3;
 
 }
-#content-area .main-area .submenu ul li i{
+#content-area .main-area .submenu ul li .fa{
 	font-size:20px;
 }
-#content-area .main-area .widget-box {
+#content-area .main-area .widget-box.submenu {
 	padding:0;
 
 	margin:0 0 20px 0;
@@ -251,4 +259,58 @@ header .search-area ul li{
 	margin:15px 0 0 0;
 	text-transform: uppercase;
 	font-size: 14px;
+
+}
+#content-area .main-area .widget-box.post{
+	overflow: auto;
+}
+#content-area .main-area .widget-box.post .head .user-img{
+	display: inline-block;
+	float: left;
+	background: url("https://randomuser.me/api/portraits/women/48.jpg")no-repeat
+	center center;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+	background-size:cover;
+	height:40px;
+	width:40px;
+	margin: 0;
+	border-radius: 50%;
+
+}
+#content-area .main-area .widget-box.post .head .post-info{
+display:inline-block;
+float:left;
+width:92%;
+
+}
+#content-area .main-area .widget-box.post .head::after{
+	content: '';
+	clear: both;
+	display: table;
+}
+#content-area .main-area .widget-box.post .head .post-info .user-info{
+	display:block;
+	font-size: 14px;
+	margin: 4px 0 6px 0;
+}
+#content-area .main-area .widget-box.post .head .post-info .post-date{
+	display: block;
+	font-size:12px;
+	color:#ABABAB;
+}
+#content-area .main-area .widget-box.post .head .user-img-container{
+	overflow: auto;
+	display: inline-block;
+	float: left;
+	width: 8%;
+}
+#content-area .main-area .widget-box.post .body .post-img .img{
+	max-width: 100%;
+	max-height: 100%;
+}
+#ig-pic{
+	max-width: 100%;
+	max-height: 100%;
 }
