@@ -210,7 +210,7 @@ header .search-area ul li {
 
 #content-area .widget-box .head .widget-icon .fa {
   font-size: 26px;
-  max-width: 50%;
+  
 }
 
 #content-area .widget-box .head .widget-title {
@@ -465,4 +465,5 @@ header .search-area ul li {
   font-style: normal;
   font-family:sans-serif;
   font-size: 14px;
+  line-height: normal;
 }
